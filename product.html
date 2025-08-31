@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+                body{
+                    font-family: 'Courier New', Courier, monospace;
+                    background: #f7f8fa;
+                    margin: 0 220px;
+                    padding: 10px;
+                    background-image: url(https://png.pngtree.com/background/20230613/original/pngtree-full-moon-scene-wallpaper-picture-image_3428206.jpg);
+                }
+                h2{
+                    text-align: center;
+                    margin-bottom: 40px;
+                }
+                .cards{
+                    width: 100%;
+                }
+                .card{
+                    width: 280px;
+                    float: left;
+                    margin: 0 20px;
+                    background: white;
+                    border-radius: 12px;
+                    border: 2px solid black;
+                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0);
+                    overflow: hidden;
+                }
+
+                .card-top{
+                    padding: 80px;
+                    background: red;
+                }
+                    .green{ background-image: url(../css/1885478.jpg); }
+                    .purple { background: yellowgreen; }
+                    .bule { background: grey; }
+
+                .card-content{
+                        padding: 15px;
+                        background-color:gray;
+                }
+                .card-content h3{
+                    margin: 0 0 8px;
+                    font-size: 18px;
+                   text-align: center;
+                }
+                .card-content p{
+                    font-size: 14px;
+                    color: #555;
+                    text-align: center;
+                }
+                .badge{
+                    position: absolute;
+                    top: 8px;
+                    right: 8px;
+                    background: #111;
+                    color: aliceblue;
+                    font-size: 12px;
+                    padding: 4px 8px;
+                    border-radius: 12px;
+                }
+                .offer{
+                    position: absolute;
+                    top: 20px;
+                    right: 40px;
+                    background:gray;
+                    color:black;
+                    padding: 15px 20px;
+                    border-radius: 10px;
+                    width: 260px;
+                    font-size: 14px;
+                    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+                    z-index: 10;
+                }
+                .offer strong{
+                    display: block;
+                    margin-bottom: 5px;
+
+                }
+                .card::after{
+                    content: "";
+                    display: table;
+                    clear: both;
+                }
+                
+    </style>
+</head>
+<body>
+    <h2> PRODUCT  CARD  - FLOAT  +  POSITION + Z-INDEX</h2>
+    <div class="offer">
+        <strong>offer</strong>
+        Get  flat 500 off on your first oder. use code <b>FIRST500</b>
+    </div>
+    <div class="cards">
+
+        <div class="card">
+            <div class="card-top green" style="background-image: url(https://logodepotweb.com/wp-content/uploads/2024/09/branded-water-bottles.webp);background-position: center ; background-size: cover;"></div>
+            <div class="card-content">
+                <h3>Eco Water Bottle</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+            </div>
+        </div>
+            <div class="card" style="position: relative; ">
+            <div class="card-top purple" style="background-image: url(https://www.binarytides.com/blog/wp-content/uploads/2020/02/bengoo-g9000-stereo-gaming-headset.jpg) ; background-position: center; background-size: cover;"></div>
+            <span class="badge">pro</span>
+         
+            <div class="card-content">
+                <h3>Noise-Cancelling</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-top blue" style="background-image: url(https://i5.walmartimages.com/asr/02bff6e7-35dd-4fcd-ba73-12f36e0520f9.a1eb6f85b2461aa4cb5498635aad20c8.jpeg);background-position: center;background-size: cover;"></div>
+            <div class="card-content">
+                <h3>Desk Organizer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+         </div>
+    </div>
+</body>
+</html>
